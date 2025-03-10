@@ -1,33 +1,104 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><!-- 声明文档类型为HTML5 -->
+<html lang="zh"><!-- 定义HTML文档的语言为中文 -->
+
 <head>
+    <!-- 文档的头部，包含元数据和样式表 -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.1, maximum-scale=5.0, user-scalable=yes">
-    <title>忆山Yishan的主页</title>
-    <!-- <style>
+    <!-- 字符编码设置为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 设置视口，使页面在移动设备上正确缩放 -->
+    <title>Yishan's Notes</title>
+    <!-- 页面标题，显示在浏览器标签上 -->
+    <style>
+        /* 定义页面的样式 */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
         }
-    </style> -->
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .notes-list {
+            margin-top: 20px;
+        }
+        .notes-list a {
+            display: block;
+            margin: 10px 0;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .notes-list a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1 id="C4";style="font-size: 50px;">忆山的一些笔记</h1>
-    <a href="#C4">Jump to C4</a>
-    <a href="test_1.html#hello">Jump to Hello</a>
-    <h1 style="font-family: 'Times New Roman', Times, serif;">Name List</h1>
-    <ol type="I">
-        <li>Mary</li>
-            <ul style="list-style-type: square;">
-                <li>Email:Mary@sjtu.edu.cn</li>
-                <li>Link:<a href="https://oc.sjtu.edu.cn">Canvas</a></li>
-            </ul>
-        <li>Jack</li>
-        <ul style="list-style-type: square;">
-            <li>Email:Jack@sjtu.edu.cn</li>
-            <li>Link:<a href="https://www.jack.com">www.jack.com</a></li>
-        </ul>
-    </ol>
+    <!-- 文档的主体部分 -->
+    <header>
+        <h1>Yishan's Notes</h1>
+        <!-- 页面标题 -->
+    </header>
+    <nav>
+        <!-- 导航栏 -->
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#notes">Notes</a>
+    </nav>
+    <div class="container">
+        <!-- 内容容器 -->
+        <section id="home">
+            <!-- 主页部分 -->
+            <h2>Welcome</h2>
+            <p>Welcome to my personal notes site! Here you can find my notes on various topics, including Git, VS Code, and web development. Feel free to explore and learn!</p>
+        </section>
+        <section id="notes" class="notes-list">
+            <!-- 笔记列表部分 -->
+            <h2>Notes</h2>
+            <a href="notes/git-basics.html">Note 1: Git Basics</a>
+            <a href="notes/vscode-tips.html">Note 2: VS Code Tips</a>
+            <a href="notes/web-dev.html">Note 3: Web Development</a>
+        </section>
+        <section id="about">
+            <!-- 关于我部分 -->
+            <h2>About Me</h2>
+            <p>Hi, I'm Yishan! I'm a student/developer who loves learning and sharing knowledge. This site is a collection of my notes on various topics.</p>
+        </section>
+    </div>
+    <footer>
+        <!-- 页脚 -->
+        &copy; 2023 Yishan's Notes. All rights reserved.
+    </footer>
 </body>
+
 </html>
