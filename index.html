@@ -82,9 +82,9 @@
             transition: transform 0.5s ease;
         }
         
-        .project-card:hover .project-image img {
+        /* .project-card:hover .project-image img {
             transform: scale(1.05);
-        }
+        } */
         
         .project-content {
             padding: 1.5rem;
@@ -172,7 +172,7 @@
     <header>
         <div class="container">
             <h1>Yishan's Projects</h1>
-            <div class="subtitle">Showcasing my work and passion projects</div>
+            <div class="subtitle">Showcasing my work and projects</div>
         </div>
     </header>
     
@@ -181,7 +181,7 @@
             <!-- Project 1 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Social App Project">
+                    <img src="./images/SodaLogo_origin.png" alt="Social App Project">
                 </div>
                 <div class="project-content">
                     <h3 class="project-title">"速搭"找搭子软件 (Soda)</h3>
@@ -204,12 +204,12 @@
             <!-- Project 2 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Finance Project">
+                    <img src="./images/cumret_lgbm.png" alt="Finance Project">
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">基于20年美股数据的投资策略优化</h3>
+                    <h3 class="project-title">基于美股数据的投资策略优化</h3>
                     <p class="project-description">
-                        参与开发的分析项目，利用历史美股数据测试和优化多种量化投资策略，包括LGBM模型等。
+                        参与开发的分析项目，利用历史美股数据测试和优化多种量化投资策略，包括LGBM模型、遗传算法等。
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">MLP</span>
@@ -217,14 +217,38 @@
                         <span class="tech-tag">Genetic Engineering</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/Zincwolf/introToFin" class="btn btn-primary" target="_blank">View Project</a>
-                        <a href="https://github.com/Zincwolf/introToFin" class="btn btn-outline" target="_blank">GitHub</a>
+                        <a href="https://github.com/Yishanka/introToFin" class="btn btn-primary" target="_blank">View Project</a>
+                        <a href="https://github.com/Yishanka/introToFin" class="btn btn-outline" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./images/loss_curve1.png" alt="Finance Project">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">卷积神经网络从零实现</h3>
+                    <p class="project-description">
+                        基于 Pytorch 架构，从支持反向传播的 Tensor 类开始，逐步实现基础的卷积神经网络，完成基本的图片分类任务
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">Tensor</span>
+                        <span class="tech-tag">Compute Graph</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Yishanka/CNN_from_scratch" class="btn btn-primary" target="_blank">View Project</a>
+                        <a href="https://github.com/Yishanka/CNN_from_scratch" class="btn btn-outline" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
+    
+
     <footer>
         <div class="container">
             <p>© 2023 Yishan's Projects. All rights reserved.</p>
